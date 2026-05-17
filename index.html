@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supabase Simple Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Supabase Simple Site</h1>
+    <p class="subtitle">A minimal website powered by Supabase</p>
+
+    <div class="card">
+      <h2>Add a Message</h2>
+      <form id="message-form">
+        <input type="text" id="message-input" placeholder="Type a message..." required />
+        <button type="submit">Save</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Messages</h2>
+      <ul id="messages-list"><li class="loading">Loading...</li></ul>
+    </div>
+
+    <p class="status" id="status"></p>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
